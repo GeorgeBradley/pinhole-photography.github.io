@@ -1,0 +1,300 @@
+
+@font-face {
+    font-family: "Montserrat-Thin";
+    src: url(CompetitorAssets/fonts/Montserrat-Thin.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(CompetitorAssets/fonts/OpenSans-Regular.ttf);
+}
+
+/* Start of Custom properties */
+:root {
+    --lightGrey:#a8a8a8;
+    --white: #ffffff;
+    --black: rgb(0, 0, 0);
+    --teal: #004156;
+    --transparent-black-10:rgb(0, 0, 0, 0.1);
+    --transparent-black-30:rgb(0, 0, 0, 0.3);
+}
+
+/* End of custom properties */
+
+
+/* Start of Reset Properties */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "OpenSans-Regular";
+}
+body {
+    padding:0;
+    margin:0;
+
+    
+}
+
+/* End of Set Properties */
+/*Start of Typography */
+h1, h2 {
+    font-family: "Montserrat-Thin";
+
+}
+
+p {
+    font-size:14pt;
+    margin-bottom:40px;
+}
+/*End of Typography */
+
+
+/* Start of top-section */
+
+
+
+.with-background {
+    background-image:url(CompetitorAssets/images/mountains.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+
+.header {
+
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--transparent-black-30);
+
+    border-bottom: 1px solid rgba(256, 256, 256, 0.3);
+}
+.header .logo-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    max-width:1400px;
+    border-bottom: 1px dashed rgba(256, 256, 256, 0.3);
+}
+.header .logo-container .logo{
+    margin:20px;
+}
+
+/* Start of Top-header navbar */
+.header .navbar {
+
+    display:flex;
+    justify-content: center;
+    width:100%;
+
+}
+.header .navbar .navbar__items {
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+}
+.navbar__items a {
+    color:white;
+    font-size:11px;
+    text-transform:uppercase;
+}
+
+.home {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:1000px;
+}
+
+.home .heading-text {
+    margin:0;
+    font-size: 50pt;
+    color:var(--white);
+    text-transform: uppercase;
+}
+
+.home .btn {
+    font-family: "OpenSans-Regular";
+    color:var(--white);
+    border:1px solid var(--white);
+    padding:20px;
+    text-transform: uppercase;
+    font-size:11px;
+    margin-top:1rem;
+}
+.home .btn:hover {
+
+    color: #a8a8a8;
+    background-color: var(--transparent-black-30);
+
+}
+/* End of Top-header navbar */
+/* End of top-section */
+
+/* Start of Section 2: About */
+.about {
+    width:100%;
+    height:100%;
+}
+.boxes {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.btn-story {
+
+    text-transform: uppercase;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+   
+}
+
+.btn-story.black {
+border: 1px solid var(--black);
+color:var(--black);
+}
+.btn-story.white {
+    border: 1px solid var(--white);
+    color:var(--white);
+}
+.box {
+    width:100%;
+    height:500px;
+    min-height:100%;
+    max-height: 100%;
+    
+}
+
+.box-hr {
+
+    
+    width:100%;
+    height:1px;
+    background-image: linear-gradient(
+ to right,
+ rgba(255, 255, 255, 0),
+ rgba(0, 0, 0, 0.75),
+ rgba(255, 255, 255, 0)
+ )
+}
+.box:nth-child(2), .box:nth-child(3) 
+{
+    padding: 80px;
+}
+.box:nth-child(3) {
+    background-color:var(--teal);
+    color:var(--white);
+}
+.box img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/* End of Section 2: About */
+
+
+/* Start of Section 3: Services */
+
+
+.services {
+width:100%;
+height:600px;
+}
+.services-background-image {
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(CompetitorAssets/images/pinhole_wedding_18.jpg);
+}
+.container {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-box {
+
+    width:600px;
+    padding:40px;
+   
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0 0 0 10px rgb(255, 255, 255);
+
+    outline: 1px solid var(--teal);
+}
+           
+/* End of Section 3: Services */
+
+/* Start of Section 4 */
+.gallery {
+
+    background-color: var(--teal);
+
+}
+
+.gallery .heading {
+    margin:0;
+    padding:80px;
+    text-transform: uppercase;
+    color:white;
+    text-align: center;
+
+    border-top: 1px solid linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(255, 255, 255, 0)
+        );
+}
+.gallery-images {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+}
+.gallery .image {
+
+  position: relative;
+  width:100%;
+  height:500px;
+}
+
+.gallery .image img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    filter:grayscale(100%);
+}
+
+.gallery .image img:hover {
+    filter:grayscale(0%);
+}
+
+
+
+/* End of Section 4 */
